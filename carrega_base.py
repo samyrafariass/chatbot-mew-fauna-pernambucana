@@ -1,13 +1,26 @@
+from dataclasses import dataclass
 import json
 import re
 import textwrap
 import unicodedata
 from pathlib import Path
-from langchain_community.document_loaders import PyPDFDirectoryLoader
-from langchain_core.documents import Document
 
 DIRETORIO_BASE = Path(__file__).resolve().parent
 PASTA_BASE = DIRETORIO_BASE / "base"
+VERSAO_BASE = 2
+
+
+@dataclass
+class Document:
+    page_content: str
+    metadata: dict
+
+
+def arquivos_base(extensao):
+    """Aceita a estrutura original e a pasta base, sem indexar cópias duplicadas."""
+    arquivos = {p.name: p for p in DIRETORIO_BASE.glob(f"*.{extensao}")}
+    arquivos.update({p.name: p for p in PASTA_BASE.glob(f"*.{extensao}")})
+    return [arquivos[nome] for nome in sorted(arquivos)]
 
 #========================
 # NARMALIZAR O TEXTO
@@ -213,7 +226,7 @@ def organizar_ficha_cetras(texto):
 
             break
 
-    
+
     # =========================================
     # 3. IDENTIFICAR ORDEM
     # =========================================
@@ -509,8 +522,18 @@ def organizar_ficha_cetras(texto):
 
 def carregar_pdf():
 
-    carregador = PyPDFDirectoryLoader(str(PASTA_BASE))
-    documentos = carregador.load()
+    from pypdf import PdfReader
+
+    documentos = []
+    for caminho in arquivos_base("pdf"):
+        for indice, pagina_pdf in enumerate(PdfReader(caminho).pages):
+            documentos.append(Document(
+                page_content=pagina_pdf.extract_text() or "",
+                metadata={"source": str(caminho), "page": indice}
+            ))
+
+    if not documentos:
+        raise FileNotFoundError("Nenhum PDF encontrado na raiz do projeto ou na pasta base.")
 
     arquivos = {
         documento.metadata.get("source", "")
@@ -524,15 +547,10 @@ def carregar_pdf():
 
     documentos_filtrados = []
 
-    limites_pdf = {
-        "biologia-gameficada.pdf": 14,
-        "biologia-pokemon.pdf": 6,
-        "bioma-caatinga.pdf": 8
-    }
-
     for documento in documentos:
 
         documento.metadata["tipo"] = "pdf"
+        documento.metadata["versao_base"] = VERSAO_BASE
 
         origem = documento.metadata.get("source", "")
         pagina = documento.metadata.get("page", 0) + 1
@@ -541,13 +559,6 @@ def carregar_pdf():
         documento.metadata["pagina"] = pagina
 
         nome_arquivo = Path(origem).name.lower()
-
-        # Limitar as páginas dos artigos
-        if (
-            nome_arquivo in limites_pdf
-            and pagina > limites_pdf[nome_arquivo]
-        ):
-            continue
 
         # Normalizar o texto
         documento.page_content = normalizar_texto(
@@ -606,6 +617,12 @@ def carregar_pdf():
                     texto_original
                 )
 
+                if not ficha.get("Nome popular") or not ficha.get("Nome científico"):
+                    raise ValueError(
+                        f"Não foi possível identificar a espécie em {nome_arquivo}, página {pagina}. "
+                        "A indexação foi interrompida para evitar uma lista incompleta."
+                    )
+
                 texto_organizado = "\n".join(
                     f"{campo}: {valor}"
                     for campo, valor in ficha.items()
@@ -635,6 +652,7 @@ def carregar_pdf():
                 )
 
                 documento.metadata["categoria"] = "ficha_animal"
+                documento.metadata["campos"] = json.dumps(ficha, ensure_ascii=False)
 
         # Identificar grupo
         grupo = identificar_grupo(pagina, origem)
@@ -698,9 +716,14 @@ def identificar_grupo(pagina, origem):
 
 def carregar_json():
 
+
     documentos = []
 
-    caminho_json = f"{PASTA_BASE}/fauna_pee.json"
+    caminho_json = next(
+        (p for p in arquivos_base("json") if p.name == "fauna_pee.json"), None
+    )
+    if caminho_json is None:
+        raise FileNotFoundError("Arquivo fauna_pee.json não encontrado na raiz ou na pasta base.")
 
     with open(caminho_json, "r", encoding="utf-8") as arquivo:
         dados = json.load(arquivo)
@@ -744,7 +767,22 @@ def carregar_json():
                 "grupo": animal.get("classe", ""),
                 "nome_animal": animal.get("nome_popular", ""),
                 "nome_cientifico": animal.get("nome_cientifico", ""),
-                "nome_pokemon": animal.get("pokemon_semelhante", {}).get("nome", "")
+                "nome_pokemon": animal.get("pokemon_semelhante", {}).get("nome", ""),
+                "versao_base": VERSAO_BASE,
+                "campos": json.dumps({
+                    "Habitat": ", ".join(animal.get("habitat", [])),
+                    "Alimentação": ", ".join(animal.get("alimentacao", [])),
+                    "Características": animal.get("caracteristicas", {}),
+                    "Tamanho corporal": animal.get("caracteristicas", {}).get("tamanho", ""),
+                    "Peso": animal.get("caracteristicas", {}).get("peso", ""),
+                    "Expectativa de vida": animal.get("caracteristicas", {}).get("expectativa_vida", ""),
+                    "Coloração": animal.get("caracteristicas", {}).get("coloracao", ""),
+                    "Comportamento": animal.get("caracteristicas", {}).get("comportamento", ""),
+                    "Status de conservação": animal.get("situacao", ""),
+                    "Ameaças": ", ".join(animal.get("principais_ameacas", [])),
+                    "Pokémon": animal.get("pokemon_semelhante", {}),
+                    "Curiosidades": animal.get("curiosidades", {})
+                }, ensure_ascii=False)
             }
         )
 

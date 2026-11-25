@@ -1,19 +1,25 @@
 import streamlit as st
-from main import perguntar, identificar_animal, normalizar
+from main import perguntar, identificar_animal, normalizar, modo_catalogo
 
 # Configuração da página
 st.set_page_config(
-    page_title="Universo pokémon na fauna Pernambucana",
-    page_icon="🦋",
+    page_title="Chat Mew | Fauna de Pernambuco",
+    page_icon="🐾",
     layout="centered"
 )
 
-# Título
-st.title("🦋 Fauna Pernambucana dentro do Universo Pokémon")
-st.subheader("Conheça a biodiversidade de Pernambuco!")
+st.title("Chat Mew")
+catalogo = modo_catalogo()
+st.caption("Fauna de Pernambuco · " + ("Modo catálogo" if catalogo else "Modo com Ollama"))
 
-st.write("Converse com nosso assistente e descubra curiosidades sobre os animais, seus habitats e suas semelhanças com o Pokémon!")
-st.divider()
+
+def exibir_resposta(texto):
+    mensagem, separador, trechos = texto.partition("\n\nTrechos consultados:\n\n")
+    st.markdown(mensagem)
+    if separador:
+        with st.expander("Conferir trechos consultados"):
+            st.text(trechos.replace("**", ""))
+
 
 # Inicializar o histórico da conversa
 if "mensagens" not in st.session_state:
@@ -29,14 +35,29 @@ if "animal_sugerido" not in st.session_state:
 if "pergunta_pendente" not in st.session_state:
     st.session_state.pergunta_pendente = None
 
+pergunta = None
+exemplos = [
+    "Quais mamíferos aparecem no catálogo do CETRAS?",
+    "Compare dois Pokémon com as espécies disponíveis.",
+    "Que atividade com Pokémon os alunos fizeram segundo os artigos?",
+]
+for i, exemplo in enumerate(exemplos):
+    if st.button(exemplo, key=f"sugestao_{i}", disabled=catalogo and i == 2,
+                 help="Disponível no modo com Ollama" if catalogo and i == 2 else None):
+        pergunta = exemplo
+
 # Exibir o histórico
 for mensagem in st.session_state.mensagens:
 
     with st.chat_message(mensagem["role"]):
-        st.markdown(mensagem["content"])
+        if mensagem["role"] == "assistant":
+            exibir_resposta(mensagem["content"])
+        else:
+            st.markdown(mensagem["content"])
 
 # Campo para digitar a pergunta
-pergunta = st.chat_input("Pergunte sobre a fauna de Pernambuco...")
+pergunta = st.chat_input("Pergunte sobre a fauna de Pernambuco...") or pergunta
+
 
 
 if pergunta:
@@ -118,10 +139,11 @@ if pergunta:
                 try:
                     resposta = perguntar(
                         pergunta_processamento,
-                        animal_referenciado
+                        animal_referenciado,
+                        st.session_state.setdefault("contexto_lista", [])
                     )
 
-                    st.markdown(resposta)
+                    exibir_resposta(resposta)
 
                 except Exception as erro:
                     resposta = "Ocorreu um erro ao processar sua pergunta. Tente novamente!"
@@ -141,6 +163,7 @@ if pergunta:
 
 
 if st.button("Limpar conversa"):
+    st.session_state.contexto_lista = []
     st.session_state.mensagens = []
     st.session_state.animal_atual = None
     st.session_state.animal_sugerido = None

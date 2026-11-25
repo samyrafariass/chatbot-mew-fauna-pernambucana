@@ -4,6 +4,7 @@ from pathlib import Path
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma.vectorstores import Chroma
 from langchain_ollama import OllamaEmbeddings
+from langchain_core.documents import Document
 from carrega_base import carregar_pdf, carregar_json
 
 DIRETORIO_BASE = Path(__file__).resolve().parent
@@ -30,8 +31,10 @@ def criar_bd():
         if doc.page_content.strip()
     ]
 
-    # Dividir somente os PDFs em chunks
-    chunks_pdf = dividir_chunks(documentos_pdf)
+    # Fichas completas preservam a espécie e seus campos no mesmo registro.
+    fichas = [d for d in documentos_pdf if d.metadata.get("categoria") == "ficha_animal"]
+    artigos = [d for d in documentos_pdf if d.metadata.get("categoria") != "ficha_animal"]
+    chunks_pdf = dividir_chunks(artigos) + fichas
 
     # Manter cada espécie do JSON como documento independente
     chunks = chunks_pdf + documentos_json
@@ -48,7 +51,7 @@ def criar_bd():
         print("Nenhum documento encontrado. Banco não criado.")
         return
 
-    return vetorizar_chunks(chunks)
+    return vetorizar_chunks([Document(page_content=d.page_content, metadata=d.metadata) for d in chunks])
 
 #============================================
 # DIVIDINDO O DOCUMENTO EM PEQUENAS PARTES
