@@ -1,0 +1,673 @@
+{
+  "estado": "Pernambuco",
+  "pais": "Brasil",
+  "especies_ameacadas": [
+    {
+      "nome_popular": "Peixe-boi-marinho",
+      "nome_cientifico": "Trichechus manatus",
+      "escala": "1.5",
+      "modelo_gltf": "assets/modelo/Peixeboi.glb",
+      "cenario_fundo": "assets/ambiente/ambiente.jpg",
+      "situacao": "Em perigo de extinção",
+      "classe": "Mamíferos",
+      "habitat": [
+        "Ambientes costeiros",
+        "estuários",
+        "litoral",
+        "manguezais"
+      ],
+      "alimentacao": [
+        "plantas aquáticas",
+        "capins-marinhos",
+        "algas"
+      ],
+      "caracteristicas": {
+        "tamanho": "podem chegar a medir 4 metros",
+        "coloracao": "varia entre cinza e marrom-acinzentado, podendo mudar de tom ao longo da vida",
+        "comportamento": "temperamento extremamente dócil e pacífico, conhecido como 'engenheiro do ecossistema' por ajudar a manter a saúde das pradarias marinhas",
+        "expectativa_vida": "até 60 anos",
+        "peso": "até 800 kg"
+      },
+      "principais_ameacas": [
+        "colisões com embarcações",
+        "degradação de estuários e manguezais",
+        "captura acidental em redes de pesca",
+        "poluição e ocupação costeira desordenada"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Dewgong",
+        "numero_pokedex": 87,
+        "caracteristicas": ["Água", "Gelo"],
+        "geracao": 1,
+        "similaridade_visual": [
+          "Corpo alongado e hidrodinâmico, adaptado à natação.",
+          "Formato arredondado da cabeça e focinho curto.",
+          "Presença de nadadeiras e aparência semelhante à de mamíferos marinhos."
+        ],
+        "similaridade_biologica": [
+          "Ambos são mamíferos aquáticos que respiram por pulmões e precisam subir à superfície para respirar.",
+          "Possuem corpos adaptados à vida aquática e membros modificados em nadadeiras."
+        ],
+        "similaridade_comportamental": [
+          "São animais predominantemente aquáticos, capazes de nadar e mergulhar para procurar alimento."
+        ],
+        "diferencas": [
+          "O peixe-boi-marinho é um animal real da ordem Sirenia, enquanto Dewgong é um Pokémon fictício inspirado em mamíferos marinhos, especialmente focas.",
+          "O peixe-boi-marinho é herbívoro e se alimenta principalmente de vegetação aquática, enquanto Dewgong é associado ao ambiente gelado e possui características do tipo Água e Gelo."
+        ],
+        "justificativa": "Dewgong apresenta semelhanças com o peixe-boi-marinho por possuir corpo adaptado à vida aquática, nadadeiras e características de mamífero marinho. Ambos respiram por pulmões e precisam emergir para respirar. Entretanto, Dewgong possui aparência mais próxima à de uma foca, com corpo mais esguio e características fictícias relacionadas ao gelo, enquanto o peixe-boi-marinho apresenta corpo robusto, comportamento herbívoro e adaptações específicas à alimentação de plantas aquáticas."
+      },
+      "curiosidades": {
+        "fatos": [
+          "O peixe-boi se comunica através de pequenos 'gritos', chamados vocalizações.",
+          "O período de gestação acontece de 12 a 14 meses.",
+          "Quando em atividade eles podem ficar de 1 a 5 minutos debaixo d'água sem respirar.",
+          "Ao repousar, os peixes-boi gastam menos oxigênio, dessa forma conseguem ficar mais tempo submersos."
+        ],
+          "importancia_ecologica": "Ajuda a manter o equilíbrio dos ecossistemas aquáticos por meio do consumo de vegetação.",
+          "destaque": "É um dos maiores mamíferos aquáticos herbívoros."
+      },
+      "id": "pe-1"
+    },
+    {
+      "nome_popular": "Tamanduá-bandeira",
+      "nome_cientifico": "Myrmecophaga tridactyla",
+      "classe": "Mamíferos",
+      "modelo_gltf": "assets/modelo/tamandua_bandeira.glb",
+      "situacao": "Vulnerável",
+      "habitat": [
+        "áreas abertas",
+        "savanas",
+        "florestas tropicais úmidas",
+        "Cerrado",
+        "Caatinga"
+      ],
+      "alimentacao": [
+        "formigas",
+        "cupins"
+      ],
+      "caracteristicas": {
+        "tamanho": "podem chegar a 2,20 metros de comprimento total",
+        "coloracao": "cinza a marrom-acinzentado, com faixa preta diagonal no tórax",
+        "comportamento": "solitário, pacífico e de movimentos lentos, passa grande parte do dia em busca de alimento; usa garras poderosas para abrir cupinzeiros",
+        "expectativa_vida": "entre 15 e 25 anos na natureza",
+        "peso": "até 45 kg"
+      },
+      "principais_ameacas": [
+        "perda e fragmentação de habitat",
+        "queimadas criminosas",
+        "atropelamentos",
+        "caça e ataques de cães"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Heatmor",
+        "numero_pokedex": 631,
+        "caracteristicas": ["Fogo"],
+        "geracao": 5,
+        "similaridade_visual": [
+          "Focinho alongado, semelhante ao focinho tubular do tamanduá-bandeira.",
+          "Língua comprida, característica marcante na alimentação de ambos.",
+          "Corpo com quatro membros e postura que lembra a de um animal terrestre quadrúpede."
+        ],
+        "similaridade_biologica": [
+          "Ambos apresentam adaptações relacionadas à alimentação de formigas e cupins.",
+          "Possuem focinho especializado e língua alongada, características associadas à captura de insetos."
+        ],
+        "similaridade_comportamental": [
+          "São associados à procura e ao consumo de formigas e outros insetos, utilizando o focinho e a língua para se alimentar."
+        ],
+        "diferencas": [
+          "O tamanduá-bandeira é um mamífero real, pertencente à ordem Pilosa, enquanto Heatmor é um Pokémon fictício do tipo Fogo.",
+          "O tamanduá-bandeira possui garras grandes para abrir formigueiros e cupinzeiros e não utiliza fogo, enquanto Heatmor usa chamas e calor em suas habilidades e em sua relação predatória com Durant."
+        ],
+        "justificativa": "Heatmor apresenta semelhanças com o tamanduá-bandeira, encontrado em Pernambuco e em outras regiões do Brasil, principalmente pelo focinho alongado, pela língua comprida e pela alimentação baseada em formigas e outros insetos. Ambos possuem adaptações corporais que facilitam a captura dessas presas. Entretanto, Heatmor é uma representação fictícia com características relacionadas ao fogo, enquanto o tamanduá-bandeira é um mamífero silvestre que utiliza suas garras e sua língua especializada para obter alimento, sem produzir fogo."
+      },
+      "curiosidades": {
+        "fatos": [
+          "É totalmente banguela, sua alimentação é líquida e pastosa, dispensando a mastigação.",
+          "Sua língua mede entre 40 cm e 60 cm e consegue se movimentar para dentro e para fora da boca até 160 vezes por minuto.",
+          "Enxerga mal e só consegue detectar presas ou perigos a poucos metros de distância.",
+          "A longa cauda peluda, que lembra uma bandeira (origem do nome popular), serve para dar equilíbrio ao andar e se enrola ao corpo para mantê-lo aquecido durante o sono.",
+          "Para não desgastar ou cegar suas afiadas garras dianteiras ao caminhar pelo chão, ele apoia o peso sobre os nós dos dedos (postura nodopedálica)."
+        ],
+          "importancia_ecologica": "Regulador natural de populações de insetos sociais (formigas e cupins). Ao usar suas fortes garras dianteiras para abrir cupinzeiros e formigueiros, ele revolve a terra (aerando o solo) e facilita a incorporação de matéria orgânica e nutrientes.",
+          "destaque": "É o maior de todos os tamanduás."
+      },
+      "id": "pe-2"
+    },
+    {
+      "nome_popular": "Tatu-bola-do-nordeste",
+      "nome_cientifico": "Tolypeutes tricinctus",
+      "situacao": "Em perigo de extinção",
+      "classe": "Mamíferos",
+      "modelo_gltf": "assets/modelo/tatubola_donordeste.glb",
+      "habitat": [
+        "caatinga",
+        "Cerrado"
+      ],
+      "alimentacao": [
+        "formigas",
+        "cupins",
+        "larvas",
+        "frutos",
+        "raízes"
+      ],
+      "caracteristicas": {
+        "tamanho": "mede cerca de 30 cm",
+        "coloracao": "marrom escura puxada para o preto em sua carapaça",
+        "comportamento": "hábito único de se enrolar completamente em uma esfera rígida para se proteger de predadores; é o menor tatu do Brasil",
+        "expectativa_vida": "15 a 25 anos na natureza",
+        "peso": "entre 1 kg e 1,8 kg"
+      },
+      "principais_ameacas": [
+        "caça predatória e de subsistência",
+        "perda de habitat para pasto e cultivos",
+        "atropelamentos"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Sandshrew",
+        "numero_pokedex": 27,
+        "caracteristicas": ["Terra"],
+        "geracao": 1,
+        "similaridade_visual": [
+          "Corpo pequeno e robusto, próximo ao formato compacto do tatu-bola-do-nordeste.",
+          "Presença de uma cobertura externa rígida que protege o corpo.",
+          "Aparência de animal terrestre com patas curtas e garras adaptadas à escavação."
+        ],
+        "similaridade_biologica": [
+          "Ambos apresentam adaptações corporais que oferecem proteção contra ameaças externas.",
+          "Possuem membros com garras que podem ser utilizados para escavar o solo."
+        ],
+        "similaridade_comportamental": [
+          "Ambos podem se enrolar para proteger o corpo diante de situações de perigo, embora essa seja uma característica especialmente marcante do tatu-bola-do-nordeste."
+        ],
+        "diferencas": [
+          "O tatu-bola-do-nordeste é um mamífero real, pertencente à ordem Cingulata, enquanto Sandshrew é um Pokémon fictício do tipo Terra.",
+          "O tatu-bola-do-nordeste possui uma carapaça formada por placas ósseas revestidas por queratina e consegue enrolar completamente o corpo, enquanto Sandshrew possui uma cobertura externa de escamas e não apresenta exatamente a mesma estrutura anatômica."
+        ],
+        "justificativa": "Sandshrew apresenta semelhanças visuais e comportamentais com o tatu-bola-do-nordeste, especialmente pelo corpo compacto, pela cobertura externa protetora, pelas patas com garras e pela capacidade de se enrolar para se defender. O tatu-bola-do-nordeste, espécie nativa do Brasil e símbolo da fauna da Caatinga, possui a habilidade característica de formar uma bola com o próprio corpo quando ameaçado. Sandshrew representa essa característica de maneira fictícia, sendo também associado à escavação e à proteção corporal."
+      },
+      "curiosidades": {
+        "fatos": [
+          "É uma das únicas duas espécies no mundo capazes de se fechar completamente em uma bola perfeita quando se sente ameaçado.",
+          "Geralmente utiliza tocas abandonadas por outros animais ou se esconde em fendas e debaixo de vegetação.",
+          "Ao forragear e cavar em busca de alimento e abrigos, movimenta camadas superficiais do solo, contribuindo para a circulação de nutrientes e a saúde da vegetação local."
+        ],
+          "importancia_ecologica": "Desempenha papéis fundamentais para o equilíbrio ecológico do semiárido.",
+          "destaque": "Considerado o menor tatu do país."
+      },
+      "id": "pe-3"
+    },
+    {
+      "nome_popular": "Saíra-pintor ou Pintor-verdadeiro",
+      "nome_cientifico": "Tangara fastuosa",
+      "situacao": "Ameaçado de extinção",
+      "classe": "Aves",
+      "escala": "1.5",
+      "modelo_gltf": "assets/modelo/Sairapintor.glb",
+      "habitat": [
+        "Mata Atlântica do nordeste brasileiro",
+        "florestas úmidas"
+      ],
+      "alimentacao": [
+        "frutos",
+        "insetos"
+      ],
+      "caracteristicas": {
+        "tamanho": "mede entre 13 a 14 cm",
+        "coloracao": "plumagem extremamente colorida, combinando azul-turquesa, verde, amarelo, preto e tons violáceos",
+        "comportamento": "vive em pequenos grupos familiares e é uma espécie bastante territorialista; endêmica do Centro de Endemismo Pernambuco",
+        "expectativa_vida": "6 a 9 anos na natureza",
+        "peso": "entre 16 e 21 gramas"
+      },
+      "principais_ameacas": [
+        "tráfico ilegal de aves silvestres",
+        "destruição e fragmentação da Mata Atlântica"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Swellow",
+        "numero_pokedex": 277,
+        "caracteristicas": ["Normal", "Voador"],
+        "geracao": 3,
+        "similaridade_visual": [
+          "Corpo pequeno e aerodinâmico, adaptado ao voo.",
+          "Asas longas e pontiagudas, que favorecem voos rápidos.",
+          "Cauda bifurcada, característica presente nas duas aves."
+        ],
+        "similaridade_biologica": [
+          "Ambos são animais vertebrados da classe das aves, com corpo coberto por penas e membros anteriores modificados em asas.",
+          "Possuem adaptações anatômicas para o voo, como corpo leve e estrutura corporal aerodinâmica."
+        ],
+        "similaridade_comportamental": [
+          "São aves capazes de realizar voos ágeis e utilizar o ambiente aéreo para procurar alimento."
+        ],
+        "diferencas": [
+          "A saíra-pintor (pintor-verdadeiro) é uma ave real da família Thraupidae, enquanto Swellow é um Pokémon fictício inspirado em aves de voo rápido, especialmente andorinhas.",
+          "A saíra-pintor apresenta plumagem bastante colorida, com diferentes tonalidades de azul, verde e amarelo, enquanto Swellow possui plumagem predominantemente azul-escura e branca."
+        ],
+        "justificativa": "Swellow apresenta semelhanças com a saíra-pintor, também conhecida como pintor-verdadeiro, principalmente pelo corpo adaptado ao voo, pelas asas pontiagudas e pela cauda bifurcada. Ambos são animais voadores com características anatômicas que favorecem a movimentação no ambiente aéreo. Entretanto, a saíra-pintor é uma ave silvestre real, conhecida por sua plumagem colorida e comportamento associado à vida nas árvores, enquanto Swellow é um Pokémon fictício com aparência inspirada em aves migratórias e grande capacidade de voo."
+      },
+      "curiosidades": {
+        "fatos": [
+          "Elas têm uma relação de extrema proximidade com as bromélias. É muito comum que construam seus ninhos (em formato de taça rasa) bem no interior dessas plantas, no alto das árvores.",
+          "Apesar do tamanho pequeno e da aparência inofensiva, a saíra-pintor é bastante territorialista e agressiva com rivais da mesma espécie.",
+          "Devido à combinação de cores espetaculares, ela sofre historicamente com a caça e o tráfico ilegal de aves silvestres, somada à drástica redução e fragmentação da Mata Atlântica nordestina."
+        ],
+          "importancia_ecologica": "Desempenha papéis fundamentais para a manutenção e o equilíbrio dos ecossistemas em Pernambuco.",
+          "destaque": "Sua plumagem é um espetáculo de cores que mistura azul-turquesa, verde, amarelo, preto e tons violáceos/laranja."
+      },
+      "id": "pe-4"
+    },
+    {
+      "nome_popular": "Limpa-folha-do-nordeste",
+      "nome_cientifico": "Automolus lammi",
+      "situacao": "Extinto",
+      "classe": "Aves",
+      "escala": "1.5",
+      "modelo_gltf": "assets/modelo/Limpafolha.glb",
+      "ordem": "Passeriformes",
+      "habitat": [
+        "Mata Atlântica do Nordeste",
+        "fragmentos florestais úmidos"
+      ],
+      "alimentacao": [
+        "insetos",
+        "artrópodes"
+      ],
+      "caracteristicas": {
+        "tamanho": "mede cerca de 18 cm",
+        "coloracao": "vermelho-tijolo-escura",
+        "comportamento": "ave insetívora que vivia nos estratos mais altos da floresta, dependente de micro-habitats com riachos no interior da mata",
+        "ultimo_registro": "em 2011"
+      },
+      "principais_ameacas": [
+        "desmatamento e fragmentação severa de seu habitat natural"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Pidgey",
+        "numero_pokedex": 16,
+        "caracteristicas": ["Normal", "Voador"],
+        "geracao": 1,
+        "similaridade_visual": [
+          "Corpo pequeno e compacto, semelhante ao de uma ave de pequeno porte.",
+          "Presença de asas, bico e patas adaptadas à vida terrestre e ao voo.",
+          "Plumagem em tons de marrom, que proporciona uma aparência discreta e semelhante à de algumas aves silvestres."
+        ],
+        "similaridade_biologica": [
+          "Ambos são vertebrados da classe das aves, possuem penas e membros anteriores modificados em asas.",
+          "Apresentam adaptações anatômicas para o voo e utilizam o bico na obtenção de alimento."
+        ],
+        "similaridade_comportamental": [
+          "São aves que procuram alimento na vegetação e utilizam o voo para se deslocar entre diferentes áreas do ambiente."
+        ],
+        "diferencas": [
+          "O limpa-folha-do-nordeste é uma ave real da família Furnariidae, enquanto Pidgey é um Pokémon fictício inspirado em pequenas aves.",
+          "O limpa-folha-do-nordeste apresenta adaptações especializadas para procurar pequenos invertebrados entre folhas e galhos, enquanto Pidgey é representado como uma ave generalista que utiliza o voo para escapar de predadores e procurar alimento."
+        ],
+        "justificativa": "Pidgey apresenta semelhanças com o limpa-folha-do-nordeste principalmente pelo tamanho reduzido, pela aparência de pequena ave, pela plumagem em tons discretos de marrom e pelas adaptações ao voo. Ambos são animais que utilizam a vegetação como parte importante de seu ambiente e procuram alimento em diferentes locais. Entretanto, o limpa-folha-do-nordeste é uma espécie silvestre real, com comportamento especializado na busca por pequenos invertebrados entre folhas e galhos, enquanto Pidgey é um Pokémon fictício que representa características gerais de pequenas aves."
+    },
+      "curiosidades": {
+        "fatos": [
+          "A espécie só foi descoberta pela ciência em 1979, no município de Murici (Alagoas). Foi encontrado apenas em 2003 em Pernambuco.",
+          "O último registro aceito da ave na natureza aconteceu em 13 de setembro de 2011, justamente na RPPN Frei Caneca, em Pernambuco.",
+          "Era uma ave altamente especializada que dependia de florestas úmidas maduras de baixada e encosta, integrando bandos mistos de aves no estrato médio e alto da mata para procurar insetos em folhas secas e bromélias."
+        ],
+          "importancia_ecologica": "Ao forragear emaranhados de folhas mortas e bromélias, atuava no controle natural de artrópodes e insetos locais.",
+          "destaque": "Considerada um dos maiores símbolos tristes da conservação da Mata Atlântica no Brasil."
+      },
+      "id": "pe-5"
+    },
+    {
+      "nome_popular": "Gato-maracajá",
+      "nome_cientifico": "Leopardus wiedii",
+      "situacao": "Vulnerável",
+      "classe": "Mamíferos",
+      "modelo_gltf": "assets/modelo/Gato_Maracaja.glb",
+      "habitat": [
+        "florestas tropicais",
+        "florestas primárias e secundárias"
+      ],
+      "alimentacao": [
+        "mamíferos arborícolas",
+        "aves",
+        "répteis",
+        "anfíbios",
+        "insetos"
+      ],
+      "caracteristicas": {
+        "tamanho": "entre 42 e 80 cm de comprimento",
+        "coloracao": "amarelo-acinzentado a castanho-amarelado, com manchas escuras",
+        "comportamento": "felino arborícola, solitário e noturno; possui tornozelos que giram 180 graus, permitindo descer de troncos de cabeça para baixo",
+        "expectativa_vida": "até 13 anos na natureza",
+        "peso": "entre 3 kg e 5 kg"
+      },
+      "principais_ameacas": [
+        "perda e fragmentação de habitat",
+        "caça",
+        "atropelamentos",
+        "retaliação por predação de animais domésticos"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Purrloin",
+        "numero_pokedex": 509,
+        "caracteristicas": ["Noturno"],
+        "geracao": 5,
+        "similaridade_visual": [
+          "Corpo pequeno e esguio, com aparência semelhante à de um felino selvagem.",
+          "Orelhas pontudas e olhos grandes, características comuns em pequenos felinos.",
+          "Cauda longa, que contribui para o equilíbrio e a comunicação corporal."
+        ],
+        "similaridade_biologica": [
+          "Ambos pertencem à classe dos mamíferos e apresentam características anatômicas típicas dos felinos.",
+          "Possuem garras, dentes adaptados à alimentação carnívora e sentidos desenvolvidos para localizar presas."
+        ],
+        "similaridade_comportamental": [
+          "Apresentam comportamento ágil e discreto, utilizando a habilidade de se movimentar silenciosamente para explorar o ambiente e capturar presas."
+        ],
+        "diferencas": [
+          "O gato-maracajá é um felino silvestre real, pertencente à família Felidae e nativo das Américas, enquanto Purrloin é um Pokémon fictício do tipo Noturno.",
+          "O gato-maracajá possui adaptações especializadas para a vida arborícola, como tornozelos flexíveis que permitem descer de árvores de cabeça para baixo, enquanto Purrloin é representado com características mais fantasiosas e comportamento brincalhão e enganador."
+        ],
+        "justificativa": "Purrloin apresenta semelhanças com o gato-maracajá principalmente pela aparência felina, pelo corpo esguio, pelas orelhas pontudas, pela cauda longa e pelo comportamento ágil e discreto. Ambos possuem características típicas de predadores, como garras e sentidos desenvolvidos para localizar presas. Entretanto, o gato-maracajá é um felino selvagem especializado em escalar árvores e caçar em ambientes florestais, enquanto Purrloin é um Pokémon fictício inspirado em pequenos gatos, conhecido por seu comportamento travesso e por utilizar truques para enganar outros personagens."
+    },
+      "curiosidades": {
+        "fatos": [
+          "Suas articulações traseiras giram até 180 graus, o que lhe permite uma proeza rara: descer de árvores de cabeça para baixo (assim como os esquilos).",
+          "Para conseguir presas como aves e pequenos primatas (como saguis), ele emite sons que imitam o chamado de filhotes, atraindo os adultos para uma emboscada.",
+          "Possui olhos grandes e protuberantes (perfeitos para a visão noturna) e uma cauda muito longa, que pode chegar a cerca de 70% do tamanho do próprio corpo, usada para manter o equilíbrio perfeito nas alturas."
+        ],
+          "importancia_ecologica": "Desempenha um papel fundamental no equilíbrio e na regeneração dos ecossistemas de Pernambuco, atuando principalmente como um predador regulador na Mata Atlântica litorânea e em enclaves florestais mais úmidos da Caatinga.",
+          "destaque": " É um dos felinos mais arborícolas do mundo."
+      },
+      "id": "pe-6"
+    },
+    {
+      "nome_popular": "Jaguatirica",
+      "nome_cientifico": "Leopardus pardalis",
+      "situacao": "Vulnerável",
+      "classe": "Mamíferos",
+      "modelo_gltf": "assets/modelo/Jaguatirica.glb",
+      "habitat": [
+        "caatinga",
+        "florestas tropicais",
+        "todos os biomas brasileiros"
+      ],
+      "alimentacao": [
+        "mamíferos",
+        "répteis",
+        "aves",
+        "frutas"
+      ],
+      "caracteristicas": {
+        "tamanho": "corpo entre 64 e 101,5 cm",
+        "coloracao": "amarela a parda com ocelas em fileiras",
+        "comportamento": "felino solitário, territorial e de hábitos predominantemente noturnos e crepusculares",
+        "expectativa_vida": "aproximadamente 10 anos na natureza",
+        "peso": "entre 6,6 kg e 18,6 kg"
+      },
+      "principais_ameacas": [
+        "perda de habitat",
+        "atropelamentos",
+        "caça ilegal",
+        "conflitos com humanos"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Liepard",
+        "numero_pokedex": 510,
+        "caracteristicas": ["Sombrio"],
+        "geracao": 5,
+        "similaridade_visual": [
+          "Corpo esguio e alongado",
+          "Pelagem com manchas e padrões contrastantes",
+          "Aparência semelhante à de um felino selvagem",
+          "Cauda relativamente longa",
+          "Orelhas pontudas"
+        ],
+        "similaridade_biologica": [
+          "Representação de um felino",
+          "Características corporais semelhantes às de gatos selvagens",
+          "Agilidade e capacidade de locomoção terrestre",
+          "Comportamento predatório representado no Pokémon"
+        ],
+        "similaridade_comportamental": [
+          "Agilidade na movimentação",
+          "Habilidade de caça",
+          "Comportamento furtivo",
+          "Características associadas a predadores solitários"
+        ],
+        "diferencas": [
+          "A jaguatirica é um mamífero real da família Felidae",
+          "Liepard é uma criatura fictícia do universo Pokémon",
+          "A jaguatirica possui pelagem amarelada com manchas escuras",
+          "Liepard apresenta coloração predominantemente roxa",
+          "Liepard possui características e habilidades sobrenaturais",
+          "A jaguatirica vive em ambientes naturais e depende de presas reais"
+        ],
+        "justificativa": "A associação entre a jaguatirica e Liepard ocorre principalmente pela semelhança visual entre os dois felinos, especialmente pelo corpo esguio, pela cauda longa, pelas orelhas pontudas e pelos padrões de manchas na pelagem. A associação também envolve características comportamentais, como agilidade, furtividade e comportamento predatório. A jaguatirica é um animal silvestre real encontrado no Brasil, inclusive em Pernambuco, enquanto Liepard é uma representação fictícia de um felino."
+  },
+      "curiosidades": {
+        "fatos": [
+          "Cada jaguatirica possui um padrão de manchas e rosetas na pelagem totalmente único, funcionando como uma verdadeira 'impressão digital' que ajuda pesquisadores a identificar indivíduos em armadilhas fotográficas..",
+          "Na parte de trás das orelhas, a jaguatirica possui uma mancha branca ou clara que se assemelha a um olho (chamada de ocelo), que serve para confundir potenciais predadores ou orientar filhotes que caminham atrás da mãe na penumbra da mata.",
+          "Embora passe muito tempo no chão, ela é excelente escaladora (sobe em árvores com facilidade para buscar presas) e, diferente de muitos felinos, não foge da água, sabendo nadar muito bem."
+        ],
+          "importancia_ecologica": "Funciona como um predador de médio porte no topo de várias cadeias alimentares, regulando naturalmente as populações de pequenos mamíferos (como roedores e marsupiais), aves e répteis.",
+          "destaque": "Terceiro maior felino das Américas."
+      },
+      "id": "pe-7"
+    },
+    {
+      "nome_popular": "Tartaruga-de-pente",
+      "nome_cientifico": "Eretmochelys imbricata",
+      "situacao": "Ameaçado de extinção",
+      "classe": "Répteis",
+      "modelo_gltf": "assets/modelo/tartaruga_de_pente.glb",
+      "habitat": [
+        "recifes de corais",
+        "costões rochosos",
+        "águas costeiras rasas"
+      ],
+      "alimentacao": [
+        "esponjas",
+        "coral-babão",
+        "anêmonas",
+        "algas"
+      ],
+      "caracteristicas": {
+        "tamanho": "até 114 cm de comprimento",
+        "coloracao": "carapaça em mosaico com tons de marrom, âmbar e amarelo",
+        "comportamento": "animal de vida solitária e altamente migratório; usa seu bico em forma de gancho para retirar esponjas das fendas dos recifes",
+        "expectativa_vida": "aproximadamente 60 anos",
+        "peso": "até 150 kg"
+      },
+      "principais_ameacas": [
+        "captura acidental em redes de pesca",
+        "degradação do ambiente costeiro",
+        "poluição marinha",
+        "coleta de ovos"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Carracosta",
+        "numero_pokedex": 565,
+        "caracteristicas": ["Água", "Pedra"],
+        "geracao": 5,
+        "similaridade_visual": [
+          "Presença de uma carapaça resistente",
+          "Corpo adaptado à locomoção aquática",
+          "Formato corporal semelhante ao de uma tartaruga",
+          "Estrutura óssea e aparência robusta",
+          "Membros adaptados para nadar"
+        ],
+        "similaridade_biologica": [
+          "Ambos apresentam características de tartarugas",
+          "Adaptação ao ambiente aquático",
+          "Presença de carapaça como estrutura de proteção",
+          "Anatomia adaptada à vida associada à água",
+          "Características de répteis"
+        ],
+        "similaridade_comportamental": [
+          "Locomoção associada ao ambiente aquático",
+          "Utilização da carapaça como proteção",
+          "Comportamento de alimentação relacionado a organismos aquáticos"
+        ],
+        "diferencas": [
+          "A tartaruga-de-pente é um réptil marinho real, enquanto Carracosta é um Pokémon fictício",
+          "A tartaruga-de-pente pertence à família Cheloniidae",
+          "Carracosta é um Pokémon pré-histórico dos tipos Água e Pedra",
+          "A tartaruga-de-pente possui carapaça com placas de queratina sobrepostas",
+          "Carracosta apresenta uma carapaça com aparência rochosa",
+          "A tartaruga-de-pente alimenta-se principalmente de esponjas marinhas, enquanto Carracosta possui uma dieta fictícia"
+        ],
+        "justificativa": "A associação entre a tartaruga-de-pente e Carracosta ocorre principalmente pela anatomia semelhante de tartaruga, pela presença de carapaça protetora e pela adaptação ao ambiente aquático. Ambos apresentam estruturas corporais relacionadas à proteção e à locomoção na água. Entretanto, a tartaruga-de-pente é uma espécie marinha real, enquanto Carracosta é um Pokémon fictício de inspiração pré-histórica, com características do tipo Água e Pedra."
+      },
+      "curiosidades": {
+        "fatos": [
+          "Recebe esse nome porque o seu casco colorido possui placas de queratina sobrepostas (como telhas) que, historicamente, foram exploradas na fabricação de pentes, joias, armações de óculos e objetos de luxo.",
+          "Ela tem a mandíbula afilada e curvada, lembrando o bico de um gavião ou falcão.",
+          "É um dos poucos animais marinhos do mundo capazes de se alimentar quase exclusivamente de esponjas de mar (que costumam ser tóxicas ou espinhosas para a maioria dos peixes), ajudando a manter o equilíbrio dos recifes."
+        ],
+          "importancia_ecologica": "Desempenha um papel ecológico fundamental para a manutenção e a saúde dos recifes de corais e dos ecossistemas costeiros em Pernambuco e em toda a costa brasileira.",
+          "destaque": "Possui papel crucial na manutenção e no equilíbrio ecológico dos recifes de corais."
+      },
+      "id": "pe-8"
+    },
+    {
+      "nome_popular": "Tartaruga-de-couro",
+      "nome_cientifico": "Dermochelys coriacea",
+      "situacao": "Vulnerável",
+      "classe": "Répteis",
+      "modelo_gltf": "assets/modelo/tartaruga_de_couro.glb",
+      "habitat": [
+        "oceano aberto",
+        "zona pelágica",
+        "litoral na época de desova"
+      ],
+      "alimentacao": [
+        "águas-vivas",
+        "zooplâncton gelatinoso"
+      ],
+      "caracteristicas": {
+        "tamanho": "cerca de 1,78 metros de comprimento",
+        "coloracao": "cinza escuro a preto com manchas brancas",
+        "comportamento": "a maior tartaruga marinha do mundo; altamente migratória, pode mergulhar mais de 1.000 metros de profundidade",
+        "expectativa_vida": "entre 40 e 80 anos",
+        "peso": "entre 400 kg e 700 kg"
+      },
+      "principais_ameacas": [
+        "ingestão de sacolas plásticas",
+        "coleta de ovos",
+        "captura acidental em redes",
+        "destruição de habitat e luz artificial nas praias"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Lapras",
+        "numero_pokedex": 131,
+        "caracteristicas": ["Água", "Gelo"],
+        "geracao": 1,
+        "similaridade_visual": [
+          "Corpo adaptado à vida aquática",
+          "Grande porte",
+          "Dorso resistente",
+          "Nadadeiras adaptadas à natação"
+        ],
+        "similaridade_biologica": [
+          "Adaptação ao ambiente marinho",
+          "Locomoção por meio de nadadeiras",
+          "Capacidade de realizar longos deslocamentos na água"
+        ],
+        "similaridade_comportamental": [
+          "Comportamento associado ao ambiente marinho",
+          "Deslocamento em águas abertas"
+        ],
+        "diferencas": [
+          "A tartaruga-de-couro é um réptil marinho real",
+          "Lapras é um Pokémon fictício",
+          "A tartaruga-de-couro possui carapaça flexível com pele coriácea, enquanto Lapras apresenta uma carapaça rígida",
+          "Lapras possui habilidades sobrenaturais relacionadas à água e ao gelo"
+        ],
+        "justificativa": "A associação ocorre principalmente pelo grande porte, pelo corpo adaptado à vida aquática, pelas nadadeiras e pela aparência de animais marinhos. Ambos representam organismos adaptados à locomoção em ambientes oceânicos."
+      },
+      "curiosidades": {
+        "fatos": [
+          "É uma espécie de hábito altamente pelágico (oceânico) que ocasionalmente visita ou é avistada na costa de Pernambuco.",
+          "Seu casco é formado por uma pele fina, fibrosa e resistente, sustentada por milhares de pequenas placas ósseas e sete cristas (ou quilhas) longitudinais que dão formato hidrodinâmico ao seu corpo.",
+          "Consegue mergulhar a mais de 1,2 quilômetro de profundidade e ficar submersa por até 85 minutos."
+        ],
+          "importancia_ecologica": "Servem como elo vital no ecossistema, sendo controladoras de populações de invertebrados gelatinosos e integrando redes complexas de vida marinha ao longo de suas rotas de passagem.",
+          "destaque": "A maior tartaruga marinha do mundo."
+      },
+      "id": "pe-9"
+    },
+    {
+      "nome_popular": "Galo-de-Campina",
+      "nome_cientifico": "Paroaria dominicana",
+      "situacao": "Pouco preocupante",
+      "classe": "Aves",
+      "escala": "1.5",
+      "modelo_gltf": "assets/modelo/Galodecampina.glb",
+      "habitat": [
+        "caatinga",
+        "áreas abertas",
+        "regiões semiáridas",
+        "matas baixas"
+      ],
+      "alimentacao": [
+        "sementes",
+        "frutos",
+        "pequenos insetos"
+      ],
+      "caracteristicas": {
+        "tamanho": "aproximadamente 17 cm",
+        "coloracao": "corpo predominantemente cinza com cabeça e garganta vermelhas",
+        "comportamento": "vive geralmente em pares ou pequenos grupos; é uma das aves canoras mais visadas pelo tráfico em Pernambuco",
+        "expectativa_vida": "aproximadamente 15 anos",
+        "peso": "aproximadamente 20 a 30 gramas"
+      },
+      "principais_ameacas": [
+        "captura ilegal para o tráfico de aves",
+        "perda de habitat"
+      ],
+      "pokemon_semelhante": {
+        "nome": "Fletchinder",
+        "numero_pokedex": 662,
+        "caracteristicas": ["Fogo", "Voador"],
+        "geracao": 6,
+        "similaridade_visual": [
+          "Plumagem com tons avermelhados",
+          "Presença de cores contrastantes",
+          "Aparência de ave de pequeno porte",
+          "Cabeça com coloração marcante"
+        ],
+        "similaridade_biologica": [
+          "Ambos são aves",
+          "Possuem corpo adaptado ao voo",
+          "Apresentam bico e asas",
+          "São animais adaptados ao ambiente terrestre e aéreo"
+        ],
+        "similaridade_comportamental": [
+          "Comportamento diurno",
+          "Locomoção por voo",
+          "Busca por alimento em ambientes naturais"
+        ],
+        "diferencas": [
+          "O galo-de-campina é uma ave real da família Thraupidae",
+          "Fletchinder é um Pokémon fictício da família evolutiva de Fletchling",
+          "O galo-de-campina possui cabeça vermelha e corpo acinzentado",
+          "Fletchinder apresenta plumagem alaranjada e habilidades relacionadas ao fogo",
+          "O galo-de-campina não possui poderes sobrenaturais"
+        ],
+        "justificativa": "A associação entre o galo-de-campina e Fletchinder ocorre principalmente pela semelhança visual das cores avermelhadas e pela anatomia de aves. Ambos possuem asas, bico e características adaptadas ao voo. Entretanto, o galo-de-campina é uma espécie real típica do Nordeste brasileiro, enquanto Fletchinder é uma criatura fictícia do universo Pokémon."
+      },
+      "curiosidades": {
+        "fatos": [
+          "Impulsionado pela beleza de sua plumagem e pelo canto marcante.",
+          "A ave recebeu esse título por causa da sua pontualidade em cantar na madrugada e ao amanhecer.",
+          "O canto dele é potente, vibrante e funciona como um aviso de posse de território."
+        ],
+          "importancia_ecologica": "Auxilia na dispersão de sementes na Caatinga e em áreas de vegetação nativa.",
+          "destaque": "Animal silvestre mais apreendido e traficado no estado de Pernambuco."
+      },
+      "id": "pe-10"
+    }
+  ]
+}
